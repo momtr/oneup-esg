@@ -1,0 +1,85 @@
+I will give you the extracted text from an ESG report. You task is to extract data from it and present it in JSON format.
+
+The resulting data structure I want for the output JSON is:
+{
+    "company_name": "OneUp",
+    "reporting_year": 2023,
+    "comparable_vector": <comparable_vector>
+}
+
+The <comparable_vector> contains 6 attributes. For each attribute, please assign a value from the object below:
+{
+  "industry_sector": [
+    "Technology",
+    "Healthcare",
+    "Financial Services",
+    "Consumer Goods",
+    "Energy",
+    "Utilities",
+    "Industrial Goods",
+    "Materials",
+    "Telecommunications",
+    "Real Estate",
+    "Automobile", 
+    "F&B"
+  ],
+  "market_capitalization": [
+    "Large Cap",
+    "Mid Cap",
+    "Small Cap"
+  ],
+  "revenue": [
+    "0-50M",
+    "50M-100M",
+    "100M-500M",
+    "500M-1B",
+    "1B-10B",
+    "10B-50B",
+    "50B+"
+  ],
+  "geographical_presence": [
+    "North America",
+    "South America",
+    "Europe",
+    "Asia",
+    "Africa",
+    "Australia",
+    "Global"
+  ],
+  "employee_count": [
+    "0-50",
+    "50-200",
+    "200-500",
+    "500-1000",
+    "1000-5000",
+    "5000-10000",
+    "10000+"
+  ],
+  "ownership_structure": [
+    "Institutional Investors",
+    "Insiders",
+    "Public",
+    "Private Equity",
+    "Government"
+  ]
+}
+
+Please follow following rules:
+   - do not use ```json or something like that
+   - the JSON you output has to be complete and processable
+
+I will give you an example: If I give you now the ESG report from BMW Group, you will outout following JSON (without other text!):
+{
+    "company_name": "BMW Group",
+    "reporting_year": 2023,
+    "comparable_vector": {
+        "industry_sector": "automobile", 
+        "market_capitalization": "Large Cap",
+        "revenue": "500M-1B",
+        "geographical_presence": [ "Europe", "America" ],
+        "employee_count": "10000+",
+        "ownership_structure": "Private Equity"
+    }
+}
+
+Now, here the ESG report from a company:

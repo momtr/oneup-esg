@@ -130,3 +130,6 @@ There should also be a prompt bar, which allows users to use the API for Data Ex
   ]
 }
 ```
+
+## 5. Setup
+Create `.env` with `GOOGLE_API_KEY` API key (`./google-cloud-sdk/bin/gcloud alpha services api-keys create`)
