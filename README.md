@@ -48,8 +48,13 @@ The general API provides a route for retrieving saved companys from the database
 ### 1.3. User Interface
 The UI presents a bubble view, which shows:
    - a filter that matches the `comparable_vector` (= revenue, industry, country location)
-   - 
+   - bubble size = revenue
+   - bubble color = ESG score
+   - 2d map = PCA output
 
+When a bubble is clicked, similar bubbles show up (performed with kNN)
+
+There should also be a prompt bar, which allows users to use the API for Data Exraction to get data back. This data is visually presented.
 
 ## 2. Data Model
 ```json
@@ -63,3 +68,8 @@ The UI presents a bubble view, which shows:
     }
 }
 ```
+
+## 3. Principles
+- Choose clean partners to be cleaner
+- Standard-compliant reporting 
+- References shown in outputs
