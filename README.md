@@ -73,3 +73,60 @@ There should also be a prompt bar, which allows users to use the API for Data Ex
 - Choose clean partners to be cleaner
 - Standard-compliant reporting 
 - References shown in outputs
+
+## 4. Comparable Factors
+```json
+{
+  "Industry Sector": [
+    "Technology",
+    "Healthcare",
+    "Financial Services",
+    "Consumer Goods",
+    "Energy",
+    "Utilities",
+    "Industrial Goods",
+    "Materials",
+    "Telecommunications",
+    "Real Estate"
+  ],
+  "Market Capitalization": [
+    "Large Cap",
+    "Mid Cap",
+    "Small Cap"
+  ],
+  "Revenue": [
+    "0-50M",
+    "50M-100M",
+    "100M-500M",
+    "500M-1B",
+    "1B-10B",
+    "10B-50B",
+    "50B+"
+  ],
+  "Geographical Presence": [
+    "North America",
+    "South America",
+    "Europe",
+    "Asia",
+    "Africa",
+    "Australia",
+    "Global"
+  ],
+  "Employee Count": [
+    "0-50",
+    "50-200",
+    "200-500",
+    "500-1000",
+    "1000-5000",
+    "5000-10000",
+    "10000+"
+  ],
+  "Ownership Structure": [
+    "Institutional Investors",
+    "Insiders",
+    "Public",
+    "Private Equity",
+    "Government"
+  ]
+}
+```
